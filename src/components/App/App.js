@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TaskCardList from '../TaskCardList/TaskCardList.js';
 import TaskForm from '../TaskForm/TaskForm.js';
 import ideas from '../../data.js';
-import '../../App.css';
+import './App.css';
 
 class App extends Component {
   constructor() {

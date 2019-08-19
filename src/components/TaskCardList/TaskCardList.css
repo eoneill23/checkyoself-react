@@ -1,0 +1,13 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: main;
+  height: 550px;
+  justify-content: center;
+  padding: 10px;
+  width: 850px;
+}
+
+.cardList {
+  list-style-type: none;
+}

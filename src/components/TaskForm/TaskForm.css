@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  grid-area: form;
+  margin: 0 auto 0 auto;
+  width: 300px;
+}
+
+.cardList {
+  padding-left: 20px;
+}
+
+.deleteCard {
+  margin-left: 38%;
+}

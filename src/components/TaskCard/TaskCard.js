@@ -1,19 +1,27 @@
 import React from 'react';
+import './TaskCard.css'
  
-const TaskCard = ({ taskCard }) => {
+const TaskCard = ({ taskCard, deleteCard }) => {
   let cardTasks = taskCard.tasks.map(task => {
     return (
-      <li>{task.title}</li>
+      <li key={task.id}>
+        <input type='checkbox' />
+        {task.title}
+      </li>
     )
   });
   return (
-    <section className='card'>
-      <h3>{taskCard.title}</h3>
-      <section>
-        <ul>
+    <section className='card' key={taskCard.id}>
+      <h3 className='cardHeader'>{taskCard.title}</h3>
+        <ul className='cardList'>
           {cardTasks}
         </ul>
-      </section>
+        <button 
+          onClick={() => deleteCard(taskCard.id)}
+          className='deleteCard'
+        >
+          Delete card
+        </button>
     </section>
   );
 }
